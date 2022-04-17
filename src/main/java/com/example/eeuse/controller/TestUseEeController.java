@@ -22,17 +22,6 @@ import java.util.List;
 public class TestUseEeController {
     private final DocumentMapper documentMapper;
 
-    @GetMapping("/index")
-    public Boolean index() {
-        // 初始化-> 创建索引,相当于MySQL建表 | 此接口须首先调用,只调用一次即可
-        LambdaEsIndexWrapper<Document> indexWrapper = new LambdaEsIndexWrapper<>();
-        indexWrapper.indexName(Document.class.getSimpleName().toLowerCase());
-        indexWrapper.mapping(Document::getTitle, FieldType.KEYWORD)
-                .mapping(Document::getContent, FieldType.TEXT);
-        documentMapper.createIndex(indexWrapper);
-        return Boolean.TRUE;
-    }
-
     @GetMapping("/insert")
     public Integer insert() {
         // 初始化-> 新增数据
