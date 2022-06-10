@@ -1,7 +1,7 @@
 package com.example.eeuse.mapper;
 
+import cn.easyes.core.conditions.interfaces.BaseEsMapper;
 import com.example.eeuse.model.Document;
-import com.xpc.easyes.core.conditions.interfaces.BaseEsMapper;
 
 /**
  * Mapper

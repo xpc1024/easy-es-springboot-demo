@@ -1,5 +1,6 @@
 package com.example.eeuse.model;
 
+import cn.easyes.annotation.TableName;
 import lombok.Data;
 
 /**
