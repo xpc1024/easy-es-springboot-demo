@@ -1,6 +1,6 @@
 package com.example.eeuse.model;
 
-import cn.easyes.annotation.TableName;
+import cn.easyes.annotation.IndexName;
 import lombok.Data;
 
 /**
@@ -9,7 +9,7 @@ import lombok.Data;
  * Copyright © 2021 xpc1024 All Rights Reserved
  **/
 @Data
-@TableName("document")
+@IndexName("document")
 public class Document {
     /**
      * es中的唯一id
