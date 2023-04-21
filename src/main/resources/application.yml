@@ -1,4 +1,4 @@
 easy-es:
-  address: 10.20.64.228:9200
+  address: 10.20.64.234:9200
   username: elastic #es用户名,若无则删去此行配置
   password: WG7WVmuNMtM4GwNYkyWH #es密码,若无则删去此行配置
